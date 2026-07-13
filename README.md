@@ -93,5 +93,3 @@ The run fails closed when CMS does not publish a recognizable weekly archive, th
 Use the Actor's Issues tab for reproducible run problems. Include the Apify run URL and the non-sensitive error message; do not post patient data, credentials, or private business records.
 
 Source code: [unitedideas/new-behavioral-health-practices-actor](https://github.com/unitedideas/new-behavioral-health-practices-actor)
-
-ActableSite publishes the same source methodology and a public sample at [New behavioral-health practices](https://actablesite.com/new-behavioral-health-practices). The Actor is the autonomous, export-ready execution surface; the website is the human-readable evidence surface.
