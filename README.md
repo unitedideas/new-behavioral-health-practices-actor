@@ -4,6 +4,13 @@ Find the behavioral-health organizations that received an NPI in the latest CMS 
 
 This Actor turns the official NPPES weekly dissemination archive into a compact, source-linked lead feed. It selects newly enumerated Type 2 organizations across eight disclosed behavioral-health taxonomy codes, removes deactivated rows, deduplicates repeated organization/city/state combinations, and returns a ready-to-export dataset.
 
+## Try the current edition
+
+- Start with the [free national preview](https://apify.com/actablesite/new-behavioral-health-practices-actor/examples/new-behavioral-health-practices-free-weekly-preview) for 15 deterministic rows in your own Apify account.
+- Use the [medical-billing preview](https://apify.com/actablesite/new-behavioral-health-practices-actor/examples/behavioral-health-npi-leads-for-medical-billing-free-preview) for billing territory and prospect research.
+- Use the [credentialing-firm preview](https://apify.com/actablesite/new-behavioral-health-practices-actor/examples/new-behavioral-health-groups-for-credentialing) for provider-enrollment market research.
+- The [hosted Actor](https://apify.com/actablesite/new-behavioral-health-practices-actor) offers a $9 full weekly edition. Buyer-paid platform usage is separate, and the full-edition event is charged only after the current CMS archive passes validation.
+
 ## The result
 
 Each run returns the latest completed weekly edition with:
