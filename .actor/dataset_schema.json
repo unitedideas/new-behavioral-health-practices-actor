@@ -1,0 +1,46 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "npi": { "type": "string" },
+    "organization": { "type": "string" },
+    "address_1": { "type": "string" },
+    "address_2": { "type": "string" },
+    "city": { "type": "string" },
+    "state": { "type": "string" },
+    "postal_code": { "type": "string" },
+    "telephone": { "type": "string" },
+    "fax": { "type": "string" },
+    "enumeration_date": { "type": "string" },
+    "last_update_date": { "type": "string" },
+    "focus": { "type": "string" },
+    "taxonomy_code": { "type": "string" },
+    "authorized_official": { "type": "string" },
+    "authorized_official_title": { "type": "string" },
+    "authorized_official_phone": { "type": "string" },
+    "edition_start": { "type": "string" },
+    "edition_end": { "type": "string" },
+    "source": { "type": "string" }
+  },
+  "views": {
+    "overview": {
+      "title": "New practices",
+      "transformation": {
+        "fields": ["organization", "focus", "city", "state", "telephone", "enumeration_date", "npi", "authorized_official", "authorized_official_title"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "organization": { "label": "Organization", "format": "text" },
+          "focus": { "label": "Behavioral-health focus", "format": "text" },
+          "city": { "label": "City", "format": "text" },
+          "state": { "label": "State", "format": "text" },
+          "telephone": { "label": "Public phone", "format": "text" },
+          "enumeration_date": { "label": "Enumerated", "format": "date" },
+          "npi": { "label": "NPI", "format": "text" },
+          "authorized_official": { "label": "Authorized official", "format": "text" },
+          "authorized_official_title": { "label": "Title", "format": "text" }
+        }
+      }
+    }
+  }
+}

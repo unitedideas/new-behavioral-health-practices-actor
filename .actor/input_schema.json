@@ -1,0 +1,27 @@
+{
+  "title": "New behavioral-health practice feed",
+  "description": "Return newly enumerated Type 2 behavioral-health organizations from the latest CMS NPPES weekly file.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "preview": {
+      "title": "Free preview",
+      "type": "boolean",
+      "description": "Return a deterministic 15-record preview and the full edition receipt without charging for a full edition.",
+      "default": true,
+      "editor": "checkbox"
+    },
+    "states": {
+      "title": "States or territories",
+      "type": "array",
+      "description": "Optional two-letter codes such as CA, TX, or WA. Leave empty for the national edition.",
+      "editor": "stringList",
+      "default": [],
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z]{2}$"
+      }
+    }
+  },
+  "required": ["preview"]
+}
